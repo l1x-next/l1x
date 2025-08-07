@@ -1,32 +1,32 @@
-export const services = [
+export const services = (t: (key: string) => string) => [
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_1.title"),
+    description: t("cards.card_1.description"),
     image: "",
   },
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_2.title"),
+    description: t("cards.card_2.description"),
     image: "",
   },
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_3.title"),
+    description: t("cards.card_3.description"),
     image: "",
   },
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_4.title"),
+    description: t("cards.card_4.description"),
     image: "",
   },
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_5.title"),
+    description: t("cards.card_5.description"),
     image: "",
   },
   {
-    title: "Lorem ipsum dolor sit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: t("cards.card_6.title"),
+    description: t("cards.card_6.description"),
     image: "",
   },
 ];

@@ -1,15 +1,6 @@
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
-import Contact from "@/components/Contact";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Services />
-      <Portfolio />
-      <Contact />
-    </>
-  );
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/en");
 }

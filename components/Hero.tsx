@@ -5,10 +5,15 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
+
+import ChangeLang from "./ChangeLang";
 
 import { images } from "@/utils/hero";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -55,6 +60,8 @@ const Hero = () => {
       id="hero"
       className="lg:min-h-screen bg-linear-to-t from-orange-100 via-transparent "
     >
+      <ChangeLang className="m-4 md:m-8 min-w-13" />
+
       <div className="flex flex-col justify-center items-center max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-40">
         <svg
           viewBox="0 0 100 100"
@@ -126,7 +133,7 @@ const Hero = () => {
               >
                 <div className="absolute h-full w-full bg-[radial-gradient(43.3%_44.23%_at_50%_49.51%,_#FFFFF7_29%,_#FFFACD_48.5%,_#F4D2BF_60.71%,rgba(214,211,210,0.00)_100%)] blur-[5px]" />
               </motion.div>
-              <p className="font-medium z-10">Our Services</p>
+              <span className="font-medium z-10">{t("button")}</span>
             </div>
           </button>
         </Link>

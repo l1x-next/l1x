@@ -6,35 +6,39 @@ import { useState } from "react";
 
 import { AnimatePresence, motion } from "motion/react";
 
+import { useTranslations } from "next-intl";
+
 import { items, socialLinks } from "@/utils/footer";
 
 import { TbArrowRight } from "react-icons/tb";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
+
   const [hovered, setHover] = useState<string>("");
 
   return (
     <footer className="flex flex-col gap-10 px-10 py-20 mt-20 bg-linear-to-tl from-orange-100 via-transparent">
-      <div className="w-full flex items-center justify-center">
-        {items.map((item, i) => (
+      <div className="w-full flex items-center justify-center gap-4 text-center text-nowrap text-lg md:text-2xl font-semibold">
+        {items(t as (key: string) => string).map((item, i) => (
           <Link key={i} href={item.link}>
             {/* link container */}
             <div className="group h-[40px] p-2 overflow-hidden">
               {/* labels container */}
               <div className="flex flex-col items-center justify-center group-hover:-translate-y-10 transition duration-700 text-zinc-700">
-                <span className="text-2xl font-semibold">{item.name}</span>
-                <span className="text-2xl font-semibold">{item.name}</span>
+                <span>{item.name}</span>
+                <span>{item.name}</span>
               </div>
             </div>
           </Link>
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-6" dir="ltr">
         {socialLinks.map((item, i) => (
           <Link
             key={i}
-            href={item.link}
+            href={item.link || "#"}
             className="flex bg-gradient-to-br from-zinc-600 hover:from-zinc-100 to-50% to-zinc-700 p-px rounded-xl overflow-hidden"
             onMouseEnter={() => setHover(item.name)}
             onMouseLeave={() => setHover("")}
