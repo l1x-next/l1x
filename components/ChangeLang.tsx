@@ -54,13 +54,13 @@ const ChangeLang = ({ className }: { className?: string }) => {
           className={cn("uppercase", className)}
           variant="solid"
           isLoading={isPending}
+          aria-label={t("label")}
         >
           {!isPending && <FaEarthAfrica />}
         </Button>
       </DropdownTrigger>
       <DropdownMenu
         disallowEmptySelection
-        aria-label={t("label")}
         selectedKeys={selectedKeys}
         selectionMode="single"
         variant="flat"

@@ -255,7 +255,7 @@ const Contact = () => {
                       <div className="mt-5">
                         <button
                           type="submit"
-                          className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-orange-600 text-white hover:bg-orange-500 focus:outline-hidden focus:bg-orange-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer transition-colors duration-300"
+                          className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-gradient-to-tr from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 focus:outline-hidden focus:bg-orange-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer transition-colors duration-300"
                         >
                           {t("form.confirm")}
                         </button>

@@ -6,9 +6,7 @@
 
   "ChangeLang": { "label": "تغيير اللغة" },
 
-  "Hero": {
-    "button": "خدماتنا"
-  },
+  "Hero": { "title": "وكالة إبداعية", "button": "خدماتنا" },
 
   "Services": {
     "title": "خدماتنا",

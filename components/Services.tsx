@@ -6,7 +6,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 import { services } from "@/utils/services";
 
-import { TbArrowNarrowRight } from "react-icons/tb";
+// import { TbArrowNarrowRight } from "react-icons/tb";
 
 const Services = () => {
   const t = useTranslations("Services");
@@ -46,16 +46,16 @@ const Services = () => {
                     />
                   )}
                 </CardItem>
-                <div className="flex justify-end items-center mt-8">
+                {/* <div className="flex justify-end items-center mt-8">
                   <CardItem
                     translateZ={20}
                     as="button"
                     className="flex justify-center items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-700 dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    {t("button")}{" "}
+                    {t("button")}
                     <TbArrowNarrowRight className="size-4 rtl:rotate-180" />
                   </CardItem>
-                </div>
+                </div> */}
               </CardBody>
             </CardContainer>
           ))}

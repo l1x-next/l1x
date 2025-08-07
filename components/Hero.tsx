@@ -58,7 +58,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="lg:min-h-screen bg-linear-to-t from-orange-100 via-transparent "
+      className="lg:min-h-screen bg-linear-to-t from-orange-100 via-transparent"
     >
       <ChangeLang className="m-4 md:m-8 min-w-13" />
 
@@ -95,7 +95,7 @@ const Hero = () => {
             />
           )}
         </svg>
-        <h1 className="text-2xl lg:text-5xl text-zinc-500">CREATIVE AGENCY</h1>
+        <h1 className="text-2xl lg:text-5xl text-zinc-500">{t("title")}</h1>
 
         <Link href="/#services" className="w-full max-w-xs mt-20 px-14 md:px-4">
           <button

@@ -9,9 +9,7 @@ declare const messages: {
 
   "ChangeLang": { "label": "Change Language" },
 
-  "Hero": {
-    "button": "Our Services"
-  },
+  "Hero": { "title": "CREATIVE AGENCY", "button": "Our Services" },
 
   "Services": {
     "title": "Our Services",
