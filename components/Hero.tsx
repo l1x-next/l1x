@@ -6,20 +6,23 @@ import { useEffect, useState } from "react";
 
 import { motion } from "motion/react";
 
-import { images } from "@/utils/hero";
+import { useImages } from "@/utils/useImages";
 
 const Hero = () => {
+  const { images, loading, error } = useImages();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    if (images.length === 0) return;
+    
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
+      setCurrentImageIndex((prevIndex: number) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   const [cursorPosition, setCursorPosition] = useState({ x: 0 });
   const [gradientOpacity, setGradientOpacity] = useState({ left: 1, right: 0 });

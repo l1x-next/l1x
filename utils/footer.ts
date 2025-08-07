@@ -1,9 +1,6 @@
 import {
   FaXTwitter,
-  FaYoutube,
-  FaBehance,
   FaLinkedin,
-  FaSquareInstagram,
 } from "react-icons/fa6";
 
 export const items = [
@@ -19,23 +16,8 @@ export const socialLinks = [
     link: "#",
   },
   {
-    name: "Youtube",
-    icon: FaYoutube,
-    link: "#",
-  },
-  {
-    name: "Behance",
-    icon: FaBehance,
-    link: "#",
-  },
-  {
     name: "Linkedin",
     icon: FaLinkedin,
-    link: "#",
-  },
-  {
-    name: "Instagram",
-    icon: FaSquareInstagram,
     link: "#",
   },
 ];
