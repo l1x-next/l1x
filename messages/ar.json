@@ -13,13 +13,8 @@
     "cards": {
       "card_1": { "title": "خدمة 1", "description": "الخدمة" },
       "card_2": { "title": "خدمة 2", "description": "الخدمة" },
-      "card_3": { "title": "خدمة 3", "description": "الخدمة" },
-      "card_4": { "title": "خدمة 4", "description": "الخدمة" },
-      "card_5": { "title": "خدمة 5", "description": "الخدمة" },
-      "card_6": { "title": "خدمة 6", "description": "الخدمة" }
-    },
-
-    "button": "جرب الآن"
+      "card_3": { "title": "خدمة 3", "description": "الخدمة" }
+    }
   },
 
   "Portfolio": {

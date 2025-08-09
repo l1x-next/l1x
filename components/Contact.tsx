@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 import { useTranslations } from "next-intl";
 
-import { logos } from "@/utils/contact";
+import { imagePaths } from "@/lib/generated/image-paths";
 
 import { FaCircleUser } from "react-icons/fa6";
 import { MdFormatQuote } from "react-icons/md";
 
 const Contact = () => {
   const t = useTranslations("Contact");
+
+  const logos = imagePaths.clients;
 
   return (
     <section id="contact">
@@ -280,12 +284,20 @@ const Contact = () => {
           </div>
 
           {/* Clients */}
-          <div className="flex flex-wrap gap-x-6 sm:gap-x-12 lg:gap-x-24">
-            {logos.map((Logo, i) => (
-              <Logo
+          <div className="flex flex-wrap gap-8 sm:gap-x-12 lg:gap-14">
+            {logos.map((logo, i) => (
+              <div
                 key={i}
-                className="py-3 lg:py-5 w-16 h-auto md:w-20 lg:w-24 text-gray-500 dark:text-neutral-500"
-              />
+                className="relative h-12 w-24 md:h-16 md:w-32 lg:h-20 lg:w-40"
+              >
+                <Image
+                  src={logo}
+                  alt="Logo"
+                  fill
+                  className="object-contain object-left"
+                  sizes="(max-width: 768px) 100px, 160px"
+                />
+              </div>
             ))}
           </div>
           {/* End Clients */}

@@ -9,12 +9,14 @@ import { useTranslations } from "next-intl";
 
 import ChangeLang from "./ChangeLang";
 
-import { images } from "@/utils/hero";
+import { imagePaths } from "@/lib/generated/image-paths";
 
 const Hero = () => {
   const t = useTranslations("Hero");
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = imagePaths.hero;
 
   useEffect(() => {
     const interval = setInterval(() => {

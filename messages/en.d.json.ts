@@ -16,13 +16,8 @@ declare const messages: {
     "cards": {
       "card_1": { "title": "Service 1", "description": "Service" },
       "card_2": { "title": "Service 2", "description": "Service" },
-      "card_3": { "title": "Service 3", "description": "Service" },
-      "card_4": { "title": "Service 4", "description": "Service" },
-      "card_5": { "title": "Service 5", "description": "Service" },
-      "card_6": { "title": "Service 6", "description": "Service" }
-    },
-
-    "button": "Try now"
+      "card_3": { "title": "Service 3", "description": "Service" }
+    }
   },
 
   "Portfolio": {

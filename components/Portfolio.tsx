@@ -2,10 +2,12 @@ import { useTranslations } from "next-intl";
 
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
 
-import { images } from "@/utils/portfolio";
+import { imagePaths } from "@/lib/generated/image-paths";
 
 const Portfolio = () => {
   const t = useTranslations("Portfolio");
+
+  const images = imagePaths.portfolio;
 
   return (
     <section

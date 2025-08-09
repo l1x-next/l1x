@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
+    "dev": "npm run generate-image-paths && next dev --turbo",
+    "build": "npm run generate-image-paths && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-image-paths": "ts-node scripts/generate-image-paths.ts",
+    "postinstall": "npm run generate-image-paths"
   },
   "dependencies": {
     "@heroui/react": "^2.8.2",
@@ -22,7 +24,8 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
