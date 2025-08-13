@@ -22,9 +22,9 @@
   },
 
   "Contact": {
-    "highlight": "Lorem ipsum dolor sit",
-    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente distinctio aliquam eaque quia sed facilis ratione ipsum mollitia, fugit nam voluptatum suscipit porro dolore animi eius perferendis est. Odio",
+    "highlight": "ابدأ رحلتك",
+    "title": "تبدأ قصتك هنا",
+    "description": "سواء كنت مستعدًا للبدء أو تستكشف الخيارات، فريقنا موجود لمساعدتك في رحلتك الإبداعية.",
     "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
     "user": {
@@ -34,7 +34,7 @@
 
     "clients": {
       "number": "123,000",
-      "title": "Lorem ipsum dolor sit"
+      "title": "عملائنا"
     },
 
     "form": {

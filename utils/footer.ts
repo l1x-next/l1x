@@ -1,10 +1,4 @@
-import {
-  FaXTwitter,
-  FaYoutube,
-  FaBehance,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaBehance } from "react-icons/fa6";
 
 export const items = (t: (key: string) => string) => [
   { name: t("services"), link: "/#services" },
@@ -19,23 +13,13 @@ export const socialLinks = [
     link: process.env.NEXT_PUBLIC_TWITTER,
   },
   {
-    name: "Youtube",
-    icon: FaYoutube,
-    link: process.env.NEXT_PUBLIC_YOUTUBE,
-  },
-  {
-    name: "Behance",
-    icon: FaBehance,
-    link: process.env.NEXT_PUBLIC_BEHANCE,
-  },
-  {
     name: "Linkedin",
     icon: FaLinkedin,
     link: process.env.NEXT_PUBLIC_LINKEDIN,
   },
   {
-    name: "Instagram",
-    icon: FaInstagram,
-    link: process.env.NEXT_PUBLIC_INSTAGRAM,
+    name: "Behance",
+    icon: FaBehance,
+    link: process.env.NEXT_PUBLIC_BEHANCE,
   },
 ];

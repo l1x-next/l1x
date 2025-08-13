@@ -25,9 +25,9 @@ declare const messages: {
   },
 
   "Contact": {
-    "highlight": "Lorem ipsum dolor sit",
-    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente distinctio aliquam eaque quia sed facilis ratione ipsum mollitia, fugit nam voluptatum suscipit porro dolore animi eius perferendis est. Odio",
+    "highlight": "Start your journey",
+    "title": "Your story starts here",
+    "description": "Whether you're ready to start or just exploring options, our team is here to help guide your creative journey.",
     "quote": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
     "user": {
@@ -37,7 +37,7 @@ declare const messages: {
 
     "clients": {
       "number": "123,000",
-      "title": "Lorem ipsum dolor sit"
+      "title": "our clients"
     },
 
     "form": {

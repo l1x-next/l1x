@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 
 import { imagePaths } from "@/lib/generated/image-paths";
 
-import { FaCircleUser } from "react-icons/fa6";
-import { MdFormatQuote } from "react-icons/md";
+// import { FaCircleUser } from "react-icons/fa6";
+// import { MdFormatQuote } from "react-icons/md";
 
 const Contact = () => {
   const t = useTranslations("Contact");
@@ -28,14 +28,14 @@ const Contact = () => {
                 <h2 className="mb-4 font-semibold text-gray-800 text-4xl lg:text-5xl dark:text-neutral-200">
                   {t("title")}
                 </h2>
-                <p className="text-gray-600 dark:text-neutral-400">
+                <p className="text-gray-600 dark:text-neutral-400 max-w-md">
                   {t("description")}
                 </p>
               </div>
               {/* End Title */}
 
               {/* Blockquote */}
-              <blockquote className="hidden md:block relative max-w-sm">
+              {/* <blockquote className="hidden md:block relative max-w-sm">
                 <MdFormatQuote className="absolute top-0 start-0 transform -translate-x-6 rtl:translate-x-6 -translate-y-8 size-16 text-gray-200 dark:text-neutral-800 ltr:rotate-180" />
 
                 <div className="relative z-10">
@@ -59,7 +59,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </footer>
-              </blockquote>
+              </blockquote> */}
               {/* End Blockquote */}
             </div>
             {/* End Col */}
@@ -277,14 +277,14 @@ const Contact = () => {
 
           {/* Clients Section */}
           <div className="mt-6 md:mt-12 py-3 flex items-center text-sm text-gray-800 gap-x-1.5 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:after:border-neutral-700">
-            <span className="font-semibold bg-clip-text bg-linear-to-l from-orange-700 to-orange-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+            {/* <span className="font-semibold bg-clip-text bg-linear-to-l from-orange-700 to-orange-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               {t("clients.number")}
-            </span>
+            </span> */}
             {t("clients.title")}
           </div>
 
           {/* Clients */}
-          <div className="flex flex-wrap gap-8 sm:gap-x-12 lg:gap-14">
+          <div className="flex justify-center flex-wrap gap-8 sm:gap-x-12 lg:gap-14">
             {logos.map((logo, i) => (
               <div
                 key={i}
@@ -294,7 +294,7 @@ const Contact = () => {
                   src={logo}
                   alt="Logo"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100px, 160px"
                 />
               </div>

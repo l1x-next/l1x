@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Baloo_Bhaijaan_2 } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
@@ -14,14 +14,9 @@ type Props = {
   params: Promise<{ locale: Locale }>;
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const balooBhaijaan2 = Baloo_Bhaijaan_2({
+  variable: "--font-baloo-bhaijaan-2",
+  subsets: ["latin", "arabic"],
 });
 
 export function generateStaticParams() {
@@ -54,7 +49,7 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale} dir={direction} className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${balooBhaijaan2.variable} font-baloo-bhaijaan-2 antialiased`}
       >
         <NextIntlClientProvider>
           <Providers>

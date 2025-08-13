@@ -14,7 +14,7 @@ const Portfolio = () => {
       id="portfolio"
       className="flex flex-col justify-center items-center gap-10 max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-40"
     >
-      <h2 className="font-semibold text-7xl leading-[1.3] text-transparent bg-clip-text bg-linear-to-l from-orange-600 to-orange-500">
+      <h2 className="font-semibold text-7xl leading-[1.5] text-transparent bg-clip-text bg-linear-to-l from-orange-600 to-orange-500">
         {t("title")}
       </h2>
       <ParallaxScroll images={images} />
